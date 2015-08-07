@@ -18,13 +18,15 @@ class Manage_Checklist{
         public $modified;
         public $conn="";
         public $data='';
+        private $username='';
+        private $password='';
 
         public function __construct(){           
            /*
             * database connection using PDO
             */
             try{                
-                $this->conn=new PDO("mysql:host=localhost;dbname=infinity",'root','123456**--');
+                $this->conn=new PDO("mysql:host=localhost;dbname=infinity",'$username','$password');
                 $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             } catch (Exception $ex) {
