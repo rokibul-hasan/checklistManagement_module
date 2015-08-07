@@ -1,0 +1,15 @@
+<?php
+
+namespace Checklist\infinity;
+
+class Manage_Checklist{
+	
+	public $title="sample";
+	public $categories_id="";
+	public $status="";
+
+	public function __construct(){
+		
+	}
+
+}

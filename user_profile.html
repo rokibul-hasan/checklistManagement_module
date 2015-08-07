@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>Checklist | User Profile</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta content="" name="description"/>
+        <meta content="" name="author"/>
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/login.css" rel="stylesheet" type="text/css"/>
+        <!--<link href="css/profile.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tasks.css" rel="stylesheet" type="text/css"/>-->
+        <link href="css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css"/>
+        <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+        <!-- END THEME STYLES -->
+        <link rel="shortcut icon" href="favicon.ico"/>
+    </head>
+    <!-- END HEAD -->
+    <!-- BEGIN BODY -->
+    <body class="login body_color" >
+        <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+        <div class="menu-toggler sidebar-toggler">
+        </div>
+        <!-- START MENU OR HEADER OPTION -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="login.html">Checklist</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="header_menu">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+                            <li><a href="guideline.html">GUIDELINE</a></li>
+                            <li><a href="login.html">LOGOUT</a></li>
+                            <li><a href="glossary.html">GLOSSARY</a></li>
+
+                        </ul>
+                    </div>
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- END HEADER -->
+        <br/>
+        <br/>
+        <br/>
+        <div class="container">
+            <div class="row profile">
+                <div class="col-md-3">
+                    <div class="profile-sidebar">
+                        <!-- SIDEBAR USERPIC -->
+                        <div class="profile-userpic">
+                            <img src="img/logo.jpg" class="img-responsive" alt="">
+                        </div>
+                        <!-- END SIDEBAR USERPIC -->
+                        <!-- SIDEBAR USER TITLE -->
+                        <div class="profile-usertitle">
+                            <div class="profile-usertitle-name">
+                                CHAYAN ROY
+                            </div>
+                            <div class="profile-usertitle-job">
+                                Web Developer & Designer
+                            </div>
+                        </div>
+                        <!-- END SIDEBAR USER TITLE -->
+                        <!-- SIDEBAR BUTTONS -->
+                        <div class="profile-userbuttons">
+                            <a href="#"><i id="social" class="fa fa-facebook-square fa-3x social-fb"></i></a>
+                            <a href="#"><i id="social" class="fa fa-twitter-square fa-3x social-tw"></i></a>
+                            <a href="#"><i id="social" class="fa fa-google-plus-square fa-3x social-gp"></i></a>
+                            <a href="#"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
+                        </div>
+                        <!-- END SIDEBAR BUTTONS -->
+                        <!-- SIDEBAR MENU -->
+                        <div class="profile-usermenu">
+                            <ul class="nav">
+                                <li class="active">
+                                    <a href="user_profile.html">
+                                        <i class="fa fa-home fa-4x"></i>
+                                        Dashboard </a>
+                                </li>
+                                <li>
+                                    <a href="account_setting.html">
+                                        <i class="fa fa-cog"></i>
+                                        Account Settings </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal12">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        Add Project</a>
+                                </li>
+                                <li>
+                                    <a href="manage_project.html">
+                                        <i class="fa fa-list"></i>
+                                        Manage Project</a>
+                                </li>
+                                <li>
+                                    <a href="manage_qc.html">
+                                        <i class="fa fa-tags"></i>
+                                        Manage QC</a>
+                                </li>
+                                   <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal1">
+                                        <i class="fa fa-spinner"></i>
+                                        Suggest QC</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- END MENU -->
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="profile-content"  >
+                        <h4>START QC</h4>
+                        <hr/>
+                        <label>Select Your Project  First</label>
+                        <select class="form-control">
+                            <option>Bootstrap</option>
+                            <option>JavaScript</option>
+                            <option>Jquery</option>
+                            <option>PHP</option>
+                            <option>HTML5</option>
+                        </select>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
+                                            <div class="col-xs-10">
+                                                Body
+                                            </div>
+                                            <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                                        </div>
+                                        <div id="detail-1">
+                                            <hr/>
+                                            <div class="row">
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                <div class="col-md-10 col-xs-10">
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                            All text free from spelling errors?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Content has been placed consistently?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Page & Content formatting has been tested?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                </div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                
+                                            </div>
+                                              
+                                          
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row toggle" id="dropdown-detail-2" data-toggle="detail-2">
+                                            <div class="col-xs-10">
+                                                Header
+                                            </div>
+                                            <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                                        </div>
+                                        <div id="detail-2">
+                                            <hr> <div class="row">
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                <div class="col-md-10 col-xs-10">
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                            All text free from spelling errors?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Content has been placed consistently?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Page & Content formatting has been tested?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                </div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row toggle" id="dropdown-detail-3" data-toggle="detail-3">
+                                            <div class="col-xs-10">
+                                               Menu
+                                            </div>
+                                            <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                                        </div>
+                                        <div id="detail-3">
+                                            <hr>
+                                             <div class="row">
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                <div class="col-md-10 col-xs-10">
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                            All text free from spelling errors?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Content has been placed consistently?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Page & Content formatting has been tested?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                </div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row toggle" id="dropdown-detail-14" data-toggle="detail-14">
+                                            <div class="col-xs-10">
+                                              button
+                                            </div>
+                                            <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                                        </div>
+                                        <div id="detail-14">
+                                            <hr>
+                                             <div class="row">
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                <div class="col-md-10 col-xs-10">
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                            All text free from spelling errors?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Content has been placed consistently?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Page & Content formatting has been tested?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                </div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row toggle" id="dropdown-detail-13" data-toggle="detail-13">
+                                            <div class="col-xs-10">
+                                               Form
+                                            </div>
+                                            <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                                        </div>
+                                        <div id="detail-13">
+                                            <hr>
+                                             <div class="row">
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                <div class="col-md-10 col-xs-10">
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                            All text free from spelling errors?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Content has been placed consistently?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Page & Content formatting has been tested?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                </div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row toggle" id="dropdown-detail-12" data-toggle="detail-12">
+                                            <div class="col-xs-10">
+                                              Table
+                                            </div>
+                                            <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                                        </div>
+                                        <div id="detail-12">
+                                            <hr>
+                                             <div class="row">
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                <div class="col-md-10 col-xs-10">
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                            All text free from spelling errors?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Content has been placed consistently?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Page & Content formatting has been tested?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                </div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row toggle" id="dropdown-detail-11" data-toggle="detail-11">
+                                            <div class="col-xs-10">
+                                               Icon
+                                            </div>
+                                            <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                                        </div>
+                                        <div id="detail-11">
+                                            <hr>
+                                             <div class="row">
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                <div class="col-md-10 col-xs-10">
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                            All text free from spelling errors?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Content has been placed consistently?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Page & Content formatting has been tested?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                </div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="row toggle" id="dropdown-detail-4" data-toggle="detail-4">
+                                            <div class="col-xs-10">
+                                                Content
+                                            </div>
+                                            <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                                        </div>
+                                        <div id="detail-4">
+                                            <hr/>
+                                            <div class="row">
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                <div class="col-md-10 col-xs-10">
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                            All text free from spelling errors?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Content has been placed consistently?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Page & Content formatting has been tested?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                </div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                
+                                            </div>
+                                              
+                                          
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row toggle" id="dropdown-detail-5" data-toggle="detail-5">
+                                            <div class="col-xs-10">
+                                               Slider
+                                            </div>
+                                            <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                                        </div>
+                                        <div id="detail-5">
+                                            <hr> <div class="row">
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                <div class="col-md-10 col-xs-10">
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                            All text free from spelling errors?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Content has been placed consistently?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Page & Content formatting has been tested?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                </div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row toggle" id="dropdown-detail-6" data-toggle="detail-6">
+                                            <div class="col-xs-10">
+                                                Grid
+                                            </div>
+                                            <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                                        </div>
+                                        <div id="detail-6">
+                                            <hr>
+                                             <div class="row">
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                <div class="col-md-10 col-xs-10">
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                            All text free from spelling errors?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Content has been placed consistently?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Page & Content formatting has been tested?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                </div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row toggle" id="dropdown-detail-7" data-toggle="detail-7">
+                                            <div class="col-xs-10">
+                                              Logo
+                                            </div>
+                                            <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                                        </div>
+                                        <div id="detail-7">
+                                            <hr>
+                                             <div class="row">
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                <div class="col-md-10 col-xs-10">
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                            All text free from spelling errors?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Content has been placed consistently?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Page & Content formatting has been tested?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                </div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row toggle" id="dropdown-detail-8" data-toggle="detail-8">
+                                            <div class="col-xs-10">
+                                                Typography
+                                            </div>
+                                            <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                                        </div>
+                                        <div id="detail-8">
+                                            <hr>
+                                             <div class="row">
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                <div class="col-md-10 col-xs-10">
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                            All text free from spelling errors?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Content has been placed consistently?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Page & Content formatting has been tested?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                </div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row toggle" id="dropdown-detail-9" data-toggle="detail-9">
+                                            <div class="col-xs-10">
+                                                Images
+                                            </div>
+                                            <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                                        </div>
+                                        <div id="detail-9">
+                                            <hr>
+                                             <div class="row">
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                <div class="col-md-10 col-xs-10">
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                            All text free from spelling errors?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Content has been placed consistently?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Page & Content formatting has been tested?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                </div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row toggle" id="dropdown-detail-10" data-toggle="detail-10">
+                                            <div class="col-xs-10">
+                                               Footer
+                                            </div>
+                                            <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                                        </div>
+                                        <div id="detail-10">
+                                            <hr>
+                                             <div class="row">
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                <div class="col-md-10 col-xs-10">
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                            All text free from spelling errors?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Content has been placed consistently?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                     <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        <label>
+                                                             Page & Content formatting has been tested?
+                                                        </label>
+                                                    </label>
+                                                </div> 
+                                                </div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <button class="btn btn-success">Submit</button>
+                    </div>
+
+                </div> 
+                
+            </div>
+        </div>
+        <br/>
+        <br/>
+
+        <div class="footer navbar-fixed-bottom">
+            <footer class="copyright navbar navbar-default navbar-bottom">
+                <span>2015 © CHECKLIST TEAM. ALL RIGHT RESERVE.</span>
+            </footer>
+        </div>
+
+        <!-- END LOGIN -->
+        <!-- BEGIN CORE PLUGINS -->
+        <!--[if lt IE 9]>
+        <script src="../../assets/global/plugins/respond.min.js"></script>
+        <script src="../../assets/global/plugins/excanvas.min.js"></script> 
+        <![endif]-->
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function () {
+                $('[id^=detail-]').hide();
+                $('.toggle').click(function () {
+                    $input = $(this);
+                    $target = $('#' + $input.attr('data-toggle'));
+                    $target.slideToggle();
+                });
+            });
+            $('.selectpicker').selectpicker();
+            $('.selectpicker').selectpicker({
+                style: 'btn-info',
+                size: 4
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $("#mytable #checkall").click(function () {
+                    if ($("#mytable #checkall").is(':checked')) {
+                        $("#mytable input[type=checkbox]").each(function () {
+                            $(this).prop("checked", true);
+                        });
+
+                    } else {
+                        $("#mytable input[type=checkbox]").each(function () {
+                            $(this).prop("checked", false);
+                        });
+                    }
+                });
+
+                $("[data-toggle=tooltip]").tooltip();
+            });
+        </script>
+        <!-- add project javascript popover start here-->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Add Project</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-3 control-label">Project name</label>
+                                <div class="col-sm-7">
+                                    <input type="text" name="project_name" class="form-control" id="inputEmail3" placeholder="enter project name">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- add project javascript popover end here-->
+        <!-- suggest QC javascript popover start here-->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Suggest QC</h4>
+                    </div>
+                    <div class="modal-body">
+                            <label>Select Your QC Category</label>
+                        <select class="form-control">
+                            <option>body</option>
+                            <option>footer</option>
+                            <option>header</option>
+                            <option>menu</option>
+                            <option>content</option>
+                        </select>
+                              <br/>
+                        <form class="form-horizontal">
+                         
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-3 control-label">YOUR QC</label>
+                                <div class="col-sm-7">
+                                    <input type="text" name="user_qc" class="form-control" id="inputEmail3" placeholder="enter your qc">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--suggest QC javascript popover end here-->
+    </body>
+    <!-- END BODY -->
+</html>

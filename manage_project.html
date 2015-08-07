@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>Checklist | Manage project</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta content="" name="description"/>
+        <meta content="" name="author"/>
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/login.css" rel="stylesheet" type="text/css"/>
+        <link href="css/login.css" rel="stylesheet" type="text/css"/>
+        <link href="css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css"/>
+        <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+        <!-- END THEME STYLES -->
+        <link rel="shortcut icon" href="favicon.ico"/>
+    </head>
+    <!-- END HEAD -->
+    <!-- BEGIN BODY -->
+    <body class="login body_color" >
+        <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+        <div class="menu-toggler sidebar-toggler">
+        </div>
+        <!-- START MENU OR HEADER OPTION -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="login.html">Checklist</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="header_menu">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+                             <li><a href="guideline.html">GUIDELINE</a></li>
+                             <li><a href="login.html">LOGOUT</a></li>
+                            <li><a href="glossary.html">GLOSSARY</a></li>
+
+                        </ul>
+                    </div>
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- END HEADER -->
+        <br/>
+        <br/>
+        <br/>
+        <div class="container">
+            <div class="row profile">
+                <div class="col-md-3">
+                    <div class="profile-sidebar">
+                        <!-- SIDEBAR USERPIC -->
+                        <div class="profile-userpic">
+                            <img src="img/logo.png" class="img-responsive" alt="">
+                        </div>
+                        <!-- END SIDEBAR USERPIC -->
+                        <!-- SIDEBAR USER TITLE -->
+                        <div class="profile-usertitle">
+                            <div class="profile-usertitle-name">
+                                CHAYAN ROY
+                            </div>
+                            <div class="profile-usertitle-job">
+                                Web Developer & Designer
+                            </div>
+                        </div>
+                        <!-- END SIDEBAR USER TITLE -->
+                        <!-- SIDEBAR BUTTONS -->
+                        <div class="profile-userbuttons">
+                            <a href="#"><i id="social" class="fa fa-facebook-square fa-3x social-fb"></i></a>
+                            <a href="#"><i id="social" class="fa fa-twitter-square fa-3x social-tw"></i></a>
+                            <a href="#"><i id="social" class="fa fa-google-plus-square fa-3x social-gp"></i></a>
+                            <a href="#"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
+                        </div>
+                        <!-- END SIDEBAR BUTTONS -->
+                        <!-- SIDEBAR MENU -->
+                        <div class="profile-usermenu">
+                            <ul class="nav">
+                                <li class="active">
+                                    <a href="user_profile.html">
+                                        <i class="fa fa-home fa-4x"></i>
+                                        Dashboard </a>
+                                </li>
+                                <li>
+                                    <a href="account_setting.html">
+                                        <i class="fa fa-cog"></i>
+                                        Account Settings </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal12">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        Add Project</a>
+                                </li>
+                                <li>
+                                    <a href="manage_project.html">
+                                        <i class="fa fa-list"></i>
+                                        Manage Project</a>
+                                </li>
+                                <li>
+                                    <a href="manage_qc.html">
+                                        <i class="fa fa-tags"></i>
+                                        Manage QC</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal1">
+                                        <i class="fa fa-spinner"></i>
+                                        Suggest QC</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- END MENU -->
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="profile-content" >
+                    
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"><i class="fa fa-list"></i> Project List</h3>
+                                            <div class="pull-right">
+                                                <span class="clickable filter" data-toggle="tooltip" title="Search project" data-container="body">
+                                                    <i class="fa fa-arrow-up"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <input type="text" class="form-control" id="task-table-filter" data-action="filter" data-filters="#task-table" placeholder="search your peoject" />
+                                        </div>
+                                        <table class="table table-hover" id="task-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Serial No</th>
+                                                    <th>Project Name</th>
+                                                    <th>Edit</th>
+                                                    <th>Delete</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Bootstrap</td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil-square-o"></i></button></p></td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i></button></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>java script</td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil-square-o"></i></button></p></td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i></button></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>PHP</td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil-square-o"></i></button></p></td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i></button></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Wordpress</td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil-square-o"></i></button></p></td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i></button></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Joomla</td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil-square-o"></i></button></p></td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i></button></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Java</td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil-square-o"></i></button></p></td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i></button></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Asp.Net</td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil-square-o"></i></button></p></td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i></button></p></td>
+                                                </tr>
+
+                                            </tbody>
+                                            
+                                        </table>
+                                        <div class="clearfix"></div>
+                                        <div class="row">
+                                            <div class="col-md-1 col-sm-1"></div>
+                                            <div class="col-md-10 col-xs-12 col-sm-10">
+                                                   <ul class="pagination">
+                                        <li class="disabled"><a href="#"><i class="fa fa-caret-square-o-left"></i></a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-square-o-right"></i></a></li>
+                                    </ul>
+                                            </div>
+                                            <div class="col-md-1 col-sm-1"></div>
+                                        </div>
+                                       
+                                    </div>
+
+                                </div>
+                                <div class="col-md-7">
+                                    
+                                      <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"><i class="fa fa-bookmark-o"></i> Complete Project</h3>
+                                          
+                                        </div>
+                                          <div class="table-responsive table-bordered">
+                                       <table id="mytable" class="table table-bordred table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Serial No</th>
+                                                    <th>Project</th>
+                                                    <th>Rate</th>
+                                                    <th>Edit</th>
+                                                    <th>Delete</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Bootstrap</td>
+                                                    <td>100%</td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil-square-o"></i></button></p></td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i></button></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>java script</td>
+                                                    <td>100%</td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil-square-o"></i></button></p></td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i></button></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>PHP</td>
+                                                    <td>100%</td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil-square-o"></i></button></p></td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i></button></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Wordpress</td>
+                                                    <td>100%</td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil-square-o"></i></button></p></td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i></button></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Joomla</td>
+                                                    <td>100%</td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil-square-o"></i></button></p></td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i></button></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Java</td>
+                                                    <td>100%</td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil-square-o"></i></button></p></td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i></button></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Asp.Net</td>
+                                                    <td>100%</td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil-square-o"></i></button></p></td>
+                                                    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i></button></p></td>
+                                                </tr>
+
+                                            </tbody>
+                                            
+                                        </table>
+                                          </div>
+                                        <div class="clearfix"></div>
+                                       <div class="row">
+                                            <div class="col-md-2 col-sm-1"></div>
+                                            <div class="col-md-8 col-xs-12 col-sm-10">
+                                                   <ul class="pagination">
+                                        <li class="disabled"><a href="#"><i class="fa fa-caret-square-o-left"></i></a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-square-o-right"></i></a></li>
+                                    </ul>
+                                            </div>
+                                            <div class="col-md-1 col-sm-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                      
+                    </div>
+
+                </div> 
+
+            </div>
+        </div>
+        <br/>
+        <br/>
+
+        <div class="footer navbar-fixed-bottom">
+            <footer class="copyright navbar navbar-default navbar-bottom">
+                <span>2015 © CHECKLIST TEAM. ALL RIGHT RESERVE.</span>
+            </footer>
+        </div>
+
+        <!-- END LOGIN -->
+        <!-- BEGIN CORE PLUGINS -->
+        <!--[if lt IE 9]>
+        <script src="../../assets/global/plugins/respond.min.js"></script>
+        <script src="../../assets/global/plugins/excanvas.min.js"></script> 
+        <![endif]-->
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script>
+            (function () {
+                'use strict';
+                var $ = jQuery;
+                $.fn.extend({
+                    filterTable: function () {
+                        return this.each(function () {
+                            $(this).on('keyup', function (e) {
+                                $('.filterTable_no_results').remove();
+                                var $this = $(this),
+                                        search = $this.val().toLowerCase(),
+                                        target = $this.attr('data-filters'),
+                                        $target = $(target),
+                                        $rows = $target.find('tbody tr');
+
+                                if (search == '') {
+                                    $rows.show();
+                                } else {
+                                    $rows.each(function () {
+                                        var $this = $(this);
+                                        $this.text().toLowerCase().indexOf(search) === -1 ? $this.hide() : $this.show();
+                                    })
+                                    if ($target.find('tbody tr:visible').size() === 0) {
+                                        var col_count = $target.find('tr').first().find('td').size();
+                                        var no_results = $('<tr class="filterTable_no_results"><td colspan="' + col_count + '">No results found</td></tr>')
+                                        $target.find('tbody').append(no_results);
+                                    }
+                                }
+                            });
+                        });
+                    }
+                });
+                $('[data-action="filter"]').filterTable();
+            })(jQuery);
+
+            $(function () {
+                // attach table filter plugin to inputs
+                $('[data-action="filter"]').filterTable();
+
+                $('.container').on('click', '.panel-heading span.filter', function (e) {
+                    var $this = $(this),
+                            $panel = $this.parents('.panel');
+
+                    $panel.find('.panel-body').slideToggle();
+                    if ($this.css('display') != 'none') {
+                        $panel.find('.panel-body input').focus();
+                    }
+                });
+                $('[data-toggle="tooltip"]').tooltip();
+            })
+        </script>
+        <!-- add project javascript popover start here-->
+        <div class="modal fade" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Add Project</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-3 control-label">Project name</label>
+                                <div class="col-sm-7">
+                                    <input type="text" name="project_name" class="form-control" id="inputEmail3" placeholder="enter project name">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- add project javascript popover end here-->
+        
+  <!-- suggest QC javascript popover start here-->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Suggest QC</h4>
+                    </div>
+                    <div class="modal-body">
+                            <label>Select Your QC Category</label>
+                        <select class="form-control">
+                            <option>body</option>
+                            <option>footer</option>
+                            <option>header</option>
+                            <option>menu</option>
+                            <option>content</option>
+                        </select>
+                              <br/>
+                        <form class="form-horizontal">
+                         
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-3 control-label">YOUR QC</label>
+                                <div class="col-sm-7">
+                                    <input type="text" name="user_qc" class="form-control" id="inputEmail3" placeholder="enter your qc">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--suggest QC javascript popover end here-->
+    </body>
+    <!-- END BODY -->
+</html>

@@ -1,0 +1,69 @@
+        <br/>
+        <br/>
+        <br/>
+        <div class="container">
+            <div class="row profile">
+                <div class="col-md-3">
+                    <div class="profile-sidebar">
+                        <!-- SIDEBAR USERPIC -->
+                        <div class="profile-userpic">
+                            <img src="src/img/logo.jpg" class="img-responsive" alt="">
+                        </div>
+                        <!-- END SIDEBAR USERPIC -->
+                        <!-- SIDEBAR USER TITLE -->
+                        <div class="profile-usertitle">
+                            <div class="profile-usertitle-name">
+                                CHAYAN ROY
+                            </div>
+                            <div class="profile-usertitle-job">
+                                Web Developer & Designer
+                            </div>
+                        </div>
+                        <!-- END SIDEBAR USER TITLE -->
+                        <!-- SIDEBAR BUTTONS -->
+                        <div class="profile-userbuttons">
+                            <a href="#"><i id="social" class="fa fa-facebook-square fa-3x social-fb"></i></a>
+                            <a href="#"><i id="social" class="fa fa-twitter-square fa-3x social-tw"></i></a>
+                            <a href="#"><i id="social" class="fa fa-google-plus-square fa-3x social-gp"></i></a>
+                            <a href="#"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
+                        </div>
+                        <!-- END SIDEBAR BUTTONS -->
+                        <!-- SIDEBAR MENU -->
+                        <div class="profile-usermenu">
+                            <ul class="nav">
+                                <li class="active">
+                                    <a href="user_profile.html">
+                                        <i class="fa fa-home fa-4x"></i>
+                                        Dashboard </a>
+                                </li>
+                                <li>
+                                    <a href="account_setting.html">
+                                        <i class="fa fa-cog"></i>
+                                        Account Settings </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal12">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        Add Project</a>
+                                </li>
+                                <li>
+                                    <a href="manage_project.html">
+                                        <i class="fa fa-list"></i>
+                                        Manage Project</a>
+                                </li>
+                                <li>
+                                    <a href="manage_checklist.php">
+                                        <i class="fa fa-tags"></i>
+                                        Manage Checklist</a>
+                                </li>
+                                   <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal1">
+                                        <i class="fa fa-spinner"></i>
+                                        Suggest QC</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- END MENU -->
+                    </div>
+                </div>

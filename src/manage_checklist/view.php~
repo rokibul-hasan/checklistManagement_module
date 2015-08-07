@@ -1,0 +1,48 @@
+<!-- Modal -->
+            <div class="modal fade" id="qc_view" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="myModalLabel">Checklist Item Details</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6 center-block">
+                            <table class="table table-condensed">
+                                <tr>
+                                    <td><strong>Category:</strong></td>
+                                    <td>header</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Title:</strong></td>
+                                    <td>logo</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sugested by:</strong></td>
+                                    <td>Admin</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Created date:</strong></td>
+                                    <td>10-5-15</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Update date:</strong></td>
+                                    <td>10-5-15</td>
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+

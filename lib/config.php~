@@ -1,0 +1,10 @@
+<?php
+
+define('STORAGE','pdo');
+define('DBHOST','localhost');
+define('DBUSER','root');
+define('DBPASS','123456**--');
+define('DB','infinity');
+define('PRODUCTION', false);
+
+

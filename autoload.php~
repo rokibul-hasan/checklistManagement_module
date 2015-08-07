@@ -1,0 +1,11 @@
+<?php
+
+require_once 'lib/app.php';
+require_once 'lib/class/checklist.php';
+
+use Checklist\infinity;
+
+$ck= new Manage_Checklist();
+
+echo $ck->title;
+
